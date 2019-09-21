@@ -13,14 +13,21 @@ public class CalculadoraNominas {
 	public static void main(String[] args) throws DatosNoCorrectosException, IOException {
 		// TODO Auto-generated method stub
 		
+		//Creacion de fichero empleados
 		File empleados = new File("empleados.txt");
 		
 		Scanner sc = new Scanner(empleados);
 		String registro1 = sc.nextLine();
+		
+		//Recogida de la informacion del primer empleado
+		
 		String[] campo1 = registro1.split(",");
 		
 		Empleado emp1 = new Empleado(campo1[0], campo1[1], campo1[2].charAt(0), Integer.parseInt(campo1[3]), Integer.parseInt(campo1[4]));
 
+		
+		//Recogida de la informacion del segundo empleado
+		
 		String registro2 = sc.nextLine();
 		String[] campo2 = registro2.split(",");
 		
@@ -32,7 +39,6 @@ public class CalculadoraNominas {
 		campo1[3] = Integer.toString(emp1.getCategoria());
 		emp2.incrAnyo();
 		campo2[2] = Integer.toString(emp2.anyos);
-		
 		
 		
 		empleados.delete();
