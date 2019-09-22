@@ -1,0 +1,5 @@
+Ada Lovelace,32000031R,F,0,0
+James Cosling,32000032G,M,3,7
+juanma,473657843,s,1,0
+juanma,647853,c,1,5
+Juanmaso,fdsafds,F,7,2
