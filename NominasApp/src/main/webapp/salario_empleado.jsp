@@ -14,6 +14,6 @@
 		Backup backup = new Backup(bbdd); %>
 		
 		<p>El salario del empleado con dni <%= request.getParameter("dni_salario") %> es: <%= bbdd.buscarSalario(request.getParameter("dni_salario"))%>
-
+		<a href="index.jsp"><button type="submit">Pagina principal</button></a>
 </body>
 </html>

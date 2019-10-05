@@ -11,7 +11,7 @@
 <body>
 
 	
-		<ol>
+		<ul>
 			<li>Ver todos los empleados  <a href="empleados.jsp"><button type="submit">Mostrar</button></a></li>
 			<form action="salario_empleado.jsp" method="GET">
 				<li>Ver salario de un empleado especifico <input type="text" name="dni_salario"><input type="submit"></li>
@@ -24,7 +24,7 @@
 			
 			<li>Recalcular y actualizar sueldos de todos los empleados</li>
 			<li>Realizar copia de seguridad de la BBDD en fichero</li>
-		</ol>	
+		</ul>	
 		
 
 </body>

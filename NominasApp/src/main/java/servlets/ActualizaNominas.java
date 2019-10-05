@@ -36,6 +36,15 @@ public class ActualizaNominas extends HttpServlet {
 		try {
 			bbdd = new BBDD();
 			bbdd.calcularSueldo(bbdd.buscarEmpleado(request.getParameter("salario_actualizado")));
+			out = response.getWriter();
+		    out.println("<html><head><title>");
+		    out.println(title);
+		    out.println("</title></head><body>");
+		    out.println("<H1>" + title + "</H1>");
+		    out.println("<p>El salario del empleado: <b>" + request.getParameter("salario_actualizado") +  "</b> ha sido actualizado.</p>");
+		    out.println("<a href=''><button>Pagina Principal</button></a>");
+		    out.println("</body></html>");
+		    out.close();
 			
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -46,17 +55,6 @@ public class ActualizaNominas extends HttpServlet {
 		} catch (DatosNoCorrectosException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally {
-			 out = response.getWriter();
-		    out.println("<html><head><title>");
-		    out.println(title);
-		    out.println("</title></head><body>");
-		    out.println("<H1>" + title + "</H1>");
-		    out.println("<p>El salario del empleado: <b>" + request.getParameter("salario_actualizado") +  "</b> ha sido actualizado.</p>");
-		    out.println("</body></html>");
-		    out.close();
-			
-			
 		}
 		
 		

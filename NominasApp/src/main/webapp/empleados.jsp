@@ -1,4 +1,3 @@
-<%@ page import = "laboral.*" %>
 <%@ page import = "bbdd.*" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -11,7 +10,6 @@
 <body>
 
 	<% BBDD bbdd = new BBDD();
-		Backup backup = new Backup(bbdd); 
 		String[] datos;%>
 		
 	<table border="1px solid black">
